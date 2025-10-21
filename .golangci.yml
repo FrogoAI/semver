@@ -30,8 +30,6 @@ linters:
       forbid:
         - pattern: ^print.*$
         - pkg: github.com/golang/mock/gomock
-        - pattern: ^fmt\.Print.*$
-          msg: Do not commit print statements.
         - pattern: ^log\.Print.*$
       exclude-godoc-examples: false
       analyze-types: true
@@ -42,13 +40,7 @@ linters:
         - empty
         - stdlib
         - generic
-        - github.com/InsideGallery/core/queue/nats.Pool
-        - github.com/InsideGallery/core/db/aerospike.Namespace
-        - github.com/InsideGallery/core/fastlog/metrics.Chart
-        - github.com/InsideGallery/core/db/mongodb.Client
-        - github.com/InsideGallery/core/queue/nats/client.Logger
-        - github.com/InsideGallery/core/utils/phone.Decoder
-        - github.com/InsideGallery/core/queue/nats/consumer.Client
+        - github.com/FrogoAI
         - github.com/neo4j/neo4j-go-driver/v5/neo4j/auth.TokenManager
         - github.com/aerospike/aerospike-client-go/v7.Error
         - github.com/aerospike/aerospike-client-go/v7.Value
@@ -101,6 +93,9 @@ linters:
       - linters:
           - revive
         text: 'var-naming: avoid meaningless package names'
+      - linters:
+          - revive
+        text: 'empty-block: this block is empty, you can remove it'
       - linters:
           - gosec
         path: dataconv/binary.go
@@ -187,7 +182,7 @@ formatters:
         - blank
         - dot
         - default
-        - prefix(github.com/InsideGallery/core)
+        - prefix(github.com/FrogoAI)
       custom-order: true
   exclusions:
     generated: lax
