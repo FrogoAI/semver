@@ -3,6 +3,8 @@ module github.com/FrogoAI/semver
 go 1.25.1
 
 require (
+	github.com/FrogoAI/packer v1.0.0
+	github.com/FrogoAI/set v1.0.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.11.1
 )

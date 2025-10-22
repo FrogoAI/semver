@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/FrogoAI/semver/dataconv"
-	"github.com/FrogoAI/semver/set"
+	"github.com/FrogoAI/packer"
+	"github.com/FrogoAI/set"
 )
 
 type SemVersion struct {
@@ -202,7 +202,7 @@ func (v *SemVersion) getNumVersion(version string, from, to int, core bool) (uin
 }
 
 func (v *SemVersion) Bytes() ([]byte, error) {
-	e := dataconv.NewBinaryEncoder()
+	e := packer.NewBinaryEncoder()
 
 	for _, val := range v.version {
 		err := e.Encode(val)

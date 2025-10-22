@@ -1,3 +1,7 @@
+github.com/FrogoAI/packer v1.0.0 h1:xl14gkW+h3EX+pfTrHE6oFW6rWs7s9YgCMdQ9XKbXZY=
+github.com/FrogoAI/packer v1.0.0/go.mod h1:nwVmn4BZnqQIWeSmnssxHqI083MulAiG/ZtrMGYqqJ8=
+github.com/FrogoAI/set v1.0.0 h1:G10TXKpdgkJyXVZg166a3/myFpebhj1Ke3NOTsDBNcI=
+github.com/FrogoAI/set v1.0.0/go.mod h1:76ROMaIbr/MwmKuOMcAtFTwnAYRy2Gc/5ME7mcahYcU=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
