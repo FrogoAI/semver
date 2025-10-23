@@ -39,6 +39,10 @@ func New(version string) (*SemVersion, error) {
 }
 
 func (v *SemVersion) build() error {
+	if v.original == "" {
+		return ErrInvalidVersionString
+	}
+
 	version := v.original
 	if version[0] == 'v' {
 		version = version[1:]

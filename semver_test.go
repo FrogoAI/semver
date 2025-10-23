@@ -33,6 +33,8 @@ func TestMalformedVersions(t *testing.T) {
 		version string
 		reason  string
 	}{
+		{"", "Empty version is empty"},
+		{"v", "Empty version is empty"},
 		{"1..0", "Empty minor version"},
 		{".1.0.0", "Leading dot"},
 		{"1.0.0-", "Trailing pre-release delimiter"},
